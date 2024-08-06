@@ -3,19 +3,19 @@ public class Main {
         //количество бонусов
         int bonus;
         //начальный счёт
-        int a = 100;
+        int balance = 100;
         //сумма пополнения
-        int b = 1100;
+        int amount = 1100;
         //проверим условие b>1000
-        if (b>1000) {
-            bonus=(b/100);
+        if (amount > 1000) {
+            bonus = (amount / 100);
+        } else {
+            bonus = 0;
         }
-        else {bonus = 0;
-        }
-        a=bonus + a + b;
+        balance = bonus + balance + amount;
         // на экран.
         System.out.println("Начисленно бонусов: " + bonus);
-        System.out.println("Текущий баланс: " + a);
+        System.out.println("Текущий баланс: " + balance);
 
     }
 }
